@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudWatch Lite | Cloud Operations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">C</div>
+        <div>
+          <h2>CloudWatch Lite</h2>
+          <p>Cloud Operations</p>
+        </div>
+      </div>
+
+      <p class="nav-label">WORKSPACE</p>
+      <nav>
+        <a class="nav-item active" href="#overview">▦ Dashboard</a>
+        <a class="nav-item" href="#infrastructure">▣ Infrastructure</a>
+        <a class="nav-item" href="#monitoring">◉ Monitoring</a>
+        <a class="nav-item" href="#deployment">↗ Deployment</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span>
+        <span>Local Demo Mode</span>
+      </div>
+    </aside>
+
+    <main class="main-content" id="overview">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">CLOUD OPERATIONS / OVERVIEW</p>
+          <h1>Infrastructure Dashboard</h1>
+          <p class="subtitle">Monitor your website and cloud infrastructure.</p>
+        </div>
+        <div class="demo-badge">● DEMO MODE</div>
+      </header>
+
+      <section class="notice">
+        <strong>Demo environment</strong>
+        <p>
+          These are sample dashboard values. AWS monitoring and live health
+          checks have not been connected yet.
+        </p>
+      </section>
+
+      <section class="metrics">
+        <article class="metric-card">
+          <div class="metric-heading">
+            <span>Website Status</span><span>◉</span>
+          </div>
+          <h2>Local Preview</h2>
+          <p class="muted">Running in your browser</p>
+          <span class="metric-tag">DEMO</span>
+        </article>
+
+        <article class="metric-card">
+          <div class="metric-heading">
+            <span>EC2 Instance</span><span>▣</span>
+          </div>
+          <h2>Not Connected</h2>
+          <p class="muted">AWS integration pending</p>
+          <span class="metric-tag">NOT CHECKED</span>
+        </article>
+
+        <article class="metric-card">
+          <div class="metric-heading">
+            <span>Monitoring</span><span>◷</span>
+          </div>
+          <h2>Not Connected</h2>
+          <p class="muted">CloudWatch setup pending</p>
+          <span class="metric-tag">NOT CHECKED</span>
+        </article>
+
+        <article class="metric-card">
+          <div class="metric-heading">
+            <span>Project Version</span><span>⌘</span>
+          </div>
+          <h2>v1.0.0</h2>
+          <p class="muted">Initial dashboard release</p>
+          <span class="metric-tag">LOCAL BUILD</span>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel" id="infrastructure">
+          <div class="panel-header">
+            <div>
+              <h2>Infrastructure Components</h2>
+              <p>Planned cloud services</p>
+            </div>
+            <span class="small-label">3 COMPONENTS</span>
+          </div>
+
+          <div class="component">
+            <div class="component-icon">EC2</div>
+            <div class="component-info">
+              <h3>Amazon EC2</h3>
+              <p>Virtual server for website hosting</p>
+            </div>
+            <span class="state pending">Not connected</span>
+          </div>
+
+          <div class="component">
+            <div class="component-icon">NG</div>
+            <div class="component-info">
+              <h3>Nginx</h3>
+              <p>Web server for serving the dashboard</p>
+            </div>
+            <span class="state pending">Not checked</span>
+          </div>
+
+          <div class="component">
+            <div class="component-icon">CW</div>
+            <div class="component-info">
+              <h3>Amazon CloudWatch</h3>
+              <p>Metrics, logs and alarms</p>
+            </div>
+            <span class="state pending">Not connected</span>
+          </div>
+        </article>
+
+        <article class="panel" id="monitoring">
+          <div class="panel-header">
+            <div>
+              <h2>Health Checklist</h2>
+              <p>Project setup progress</p>
+            </div>
+            <span class="progress-count">0 / 3</span>
+          </div>
+
+          <div class="progress-track">
+            <div class="progress-fill"></div>
+          </div>
+
+          <div class="check-item">
+            <span class="check-circle">1</span>
+            <div>
+              <h3>Dashboard created</h3>
+              <p>HTML and CSS files prepared</p>
+            </div>
+            <span class="state complete">Ready locally</span>
+          </div>
+
+          <div class="check-item">
+            <span class="check-circle">2</span>
+            <div>
+              <h3>Website deployed</h3>
+              <p>Host the site on a Linux server</p>
+            </div>
+            <span class="state pending">Pending</span>
+          </div>
+
+          <div class="check-item">
+            <span class="check-circle">3</span>
+            <div>
+              <h3>Monitoring configured</h3>
+              <p>Set up health checks and alerts</p>
+            </div>
+            <span class="state pending">Pending</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel roadmap" id="deployment">
+        <div class="panel-header">
+          <div>
+            <h2>Deployment Roadmap</h2>
+            <p>Build the project step by step</p>
+          </div>
+        </div>
+
+        <div class="roadmap-steps">
+          <div class="roadmap-step finished">
+            <span class="roadmap-number">01</span>
+            <h3>Local Dashboard</h3>
+            <p>HTML + CSS</p>
+            <span>Current stage</span>
+          </div>
+
+          <div class="roadmap-step">
+            <span class="roadmap-number">02</span>
+            <h3>Git & GitHub</h3>
+            <p>Version control</p>
+            <span>Next step</span>
+          </div>
+
+          <div class="roadmap-step">
+            <span class="roadmap-number">03</span>
+            <h3>AWS Deployment</h3>
+            <p>Linux + Nginx</p>
+            <span>After billing check</span>
+          </div>
+
+          <div class="roadmap-step">
+            <span class="roadmap-number">04</span>
+            <h3>Monitoring</h3>
+            <p>Health checks + alerts</p>
+            <span>Future stage</span>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>CloudWatch Lite · DevOps Portfolio Project</span>
+        <span>v1.0.0 · Demo data only</span>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
