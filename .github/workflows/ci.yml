@@ -1,0 +1,21 @@
+﻿name: CloudWatch Lite CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-website:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          test -f index.html
+          test -f style.css
+          test -f README.md
+          echo "All required website files exist!"
